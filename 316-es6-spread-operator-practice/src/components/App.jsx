@@ -21,6 +21,18 @@ function App() {
         <h1>To-Do List</h1>
       </div>
       <InputArea addItem={addItem} />
+      {/* <div className="form">
+        <input
+          type="text"
+          placeholder="Do something"
+          onChange={handleChange}
+          value={toDoItem}
+          onKeyDown={handleKeyDown}
+        />
+        <button onClick={handleClick}>
+          <span>Add</span>
+        </button>
+      </div> */}
       <div>
         <ul>
           {toDoList.map((item, index) => (
