@@ -5,8 +5,8 @@ export default function ToDoItem(props) {
     const [isStrikeThrough, setLineThrough] = React.useState(false);
     
     function handleClick() {
-        setLineThrough(true);
-    }
+        setLineThrough((prev) => !prev);
+      }
 
     return (
         <li style={{textDecoration: isStrikeThrough && "line-through"}} onClick={handleClick} >
